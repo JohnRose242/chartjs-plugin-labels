@@ -307,7 +307,7 @@
         y: view.y + (Math.sin(centreAngle) * rangeFromCentre)
       };
       if (this.options.position === 'outside') {
-        var offset = this.options.textMargin + this.measureLabel(label).width / 2;
+        var offset = this.options.textMargin;
         renderInfo.x += renderInfo.x < view.x ? -offset : offset;
       }
       return renderInfo;
